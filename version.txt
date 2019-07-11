@@ -1,0 +1,6 @@
+01 - Initial release
+02 - Added Invoices into T2 Vendor Portal
+03 - Removed hardcoded config from "Perform Transformation.snippet"
+04 - Added static batch package to the document input variable of 04-Transform PO DTS Callback
+   - Improved performance for "Deliver PO Data to 360.snippet" for Kofax RPA 10.4.0.0 (tested on Windows 10)
+05 - Fixed DTS finder which has changed in 10.5
