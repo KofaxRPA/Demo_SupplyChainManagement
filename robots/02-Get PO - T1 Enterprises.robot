@@ -12,7 +12,10 @@
       <version>10.3.2.0</version>
       <version>10.3.2.1</version>
       <version>10.4.0.0</version>
+      <version>10.7.0.1</version>
     </saved-by-versions>
+    <comment/>
+    <tags/>
     <referenced-types>
       <type name="PO"/>
       <type name="LineItem"/>
@@ -141,6 +144,10 @@
   <property name="comment">
     <null/>
   </property>
+  <property name="tags" class="RobotTagList"/>
+  <property name="humanProcessingTime">
+    <null/>
+  </property>
   <property name="executionMode" class="ExecutionMode">
     <property name="enum-name" class="String">FULL</property>
   </property>
@@ -163,7 +170,7 @@
           <property name="urlProvider" class="kapow.robot.plugin.common.stepaction.urlprovider2.ExpressionURLProvider2">
             <property name="expression" class="String">baseSettings.WebDemoApp + "/T1VendorPortal"</property>
           </property>
-          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
             <property name="SSLUsage" class="com.kapowtech.net.ssl.SSLUsage" id="6">
               <property name="enum-name" class="String">TLS1x_SSL3_TLSHello</property>
             </property>
@@ -191,7 +198,7 @@
       <object class="Transition" serializationversion="3" id="8">
         <property name="name" class="String">Click Orders</property>
         <property name="stepAction" class="Click" serializationversion="0">
-          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
             <property name="SSLUsage" idref="6"/>
             <property name="outputPageIfTimeoutEnabled" class="Boolean">false</property>
             <property name="ancestorProvider" class="BrowserConfigurationSpecificationAncestorProviderForStep"/>
@@ -309,7 +316,7 @@
                   <property name="name" class="String">Excel</property>
                 </property>
               </property>
-              <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+              <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
                 <property name="SSLUsage" idref="6"/>
                 <property name="outputPageIfTimeoutEnabled" class="Boolean">false</property>
                 <property name="ancestorProvider" class="BrowserConfigurationSpecificationAncestorProviderForStep"/>
@@ -1366,7 +1373,7 @@
       <object class="Transition" serializationversion="3" id="66">
         <property name="name" class="String">Click Next</property>
         <property name="stepAction" class="Click" serializationversion="0">
-          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
             <property name="SSLUsage" idref="6"/>
             <property name="outputPageIfTimeoutEnabled" class="Boolean">false</property>
             <property name="ancestorProvider" class="BrowserConfigurationSpecificationAncestorProviderForStep"/>
@@ -1477,7 +1484,7 @@
       </object>
     </edges>
   </property>
-  <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+  <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
     <property name="SSLUsage" idref="6"/>
     <property name="outputPageIfTimeoutEnabled" class="Boolean">false</property>
   </property>
