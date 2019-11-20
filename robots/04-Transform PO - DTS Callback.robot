@@ -4,7 +4,10 @@
     <saved-by-versions>
       <version>10.3.2.0</version>
       <version>10.3.2.1</version>
+      <version>10.7.0.1</version>
     </saved-by-versions>
+    <comment/>
+    <tags/>
     <referenced-types>
       <type name="DocumentTransformationInput"/>
       <type name="PO"/>
@@ -67,6 +70,10 @@
   <property name="privateHTTPCacheEnabled" class="Boolean" id="1">true</property>
   <property name="privateHTTPCacheSize" class="Integer">2048</property>
   <property name="comment">
+    <null/>
+  </property>
+  <property name="tags" class="RobotTagList"/>
+  <property name="humanProcessingTime">
     <null/>
   </property>
   <property name="executionMode" class="ExecutionMode">
@@ -216,7 +223,7 @@
             <property name="value" class="String">application/xml</property>
           </property>
           <property name="output" class="kapow.robot.plugin.common.stateprocessor.rest.ToBrowserStateOutputSpecification"/>
-          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
             <property name="SSLUsage" class="com.kapowtech.net.ssl.SSLUsage" id="13">
               <property name="enum-name" class="String">TLS1x_SSL3_TLSHello</property>
             </property>
@@ -295,7 +302,7 @@
             <property name="value" class="String">application/xml</property>
           </property>
           <property name="output" class="kapow.robot.plugin.common.stateprocessor.rest.ToBrowserStateOutputSpecification"/>
-          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
             <property name="SSLUsage" idref="13"/>
             <property name="outputPageIfTimeoutEnabled" class="Boolean">false</property>
             <property name="ancestorProvider" class="BrowserConfigurationSpecificationAncestorProviderForStep"/>
@@ -337,7 +344,10 @@
             </property>
           </property>
           <property name="output" class="kapow.robot.plugin.common.stateprocessor.rest.ToBrowserStateOutputSpecification"/>
-          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25">
+          <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
+            <property name="SSLUsage" class="com.kapowtech.net.ssl.SSLUsage" id="19">
+              <property name="enum-name" class="String">TLS10_TLSHello</property>
+            </property>
             <property name="ancestorProvider" class="BrowserConfigurationSpecificationAncestorProviderForStep"/>
           </property>
         </property>
@@ -351,8 +361,8 @@
           <element class="String">name</element>
         </property>
       </object>
-      <object class="End" id="19"/>
-      <object class="Transition" serializationversion="3" id="20">
+      <object class="End" id="20"/>
+      <object class="Transition" serializationversion="3" id="21">
         <property name="name" class="String">Generate Error</property>
         <property name="stepAction" class="GenerateError">
           <property name="errorMessageExpression" class="kapow.robot.plugin.common.support.expression.stringexpr.ValueStringExpression">
@@ -367,7 +377,7 @@
         <property name="enabled" idref="1"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="End" id="21"/>
+      <object class="End" id="22"/>
     </steps>
     <blockEndStep class="BlockEndStep"/>
     <edges class="ArrayList">
@@ -389,7 +399,7 @@
       </object>
       <object class="TransitionEdge">
         <from idref="5"/>
-        <to idref="20"/>
+        <to idref="21"/>
       </object>
       <object class="TransitionEdge">
         <from idref="6"/>
@@ -437,13 +447,15 @@
       </object>
       <object class="TransitionEdge">
         <from idref="18"/>
-        <to idref="19"/>
+        <to idref="20"/>
       </object>
       <object class="TransitionEdge">
-        <from idref="20"/>
-        <to idref="21"/>
+        <from idref="21"/>
+        <to idref="22"/>
       </object>
     </edges>
   </property>
-  <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="25"/>
+  <property name="browserConfigurationSpecification" class="BrowserConfigurationSpecificationWebKit" serializationversion="26">
+    <property name="SSLUsage" idref="19"/>
+  </property>
 </object>
