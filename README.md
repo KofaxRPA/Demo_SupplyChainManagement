@@ -3,4 +3,4 @@ The Supply Chain Management Demonstration (SCM Demo) has been designed to showca
 
 # Compatibility
 
-Compatibility of SCM-4.0-v5-dev branch: Kofax RPA 10.5
+Compatibility of SCM-4.0-v6 branch: Kofax RPA 10.6
